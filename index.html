@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
+<title>Compucorp Front End Developer task 1</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="js/controllers.js"></script>
+</head>
+<body>
+<header class="masthead">
+    <h1>Weather update</h1>
+</header>
+<div class="content" ng-app="MyApp">
+    <div ng-controller="MyController">
+    <form name="form" ng-if="Country" class="form">
+    <h5>Enter zip code and country</h5>
+    <input type="text" name="zip" placeholder="zipcode">
+    <br><br>
+    <select ng-model="Data.country" name="country">
+    <option ng-repeat="country in Country"  value="{{country.code}}" required>{{country.name}}</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit" ng-click="Confirm()">
+    </form>
+     <div ng-if="data">
+         
+     </div>
+    </div>
+</div>
+</body>
+</html>
