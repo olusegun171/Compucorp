@@ -1,0 +1,24 @@
+body {
+	font: 400 16px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;	
+	background-color: #F2F2F2;
+}
+.masthead {
+	width: 100%;
+	margin: 0 auto;
+	
+	color: #ddd;
+	padding: 0;
+}
+.form{
+	width: 25%;
+	margin: 0 auto;
+}
+.masthead h1 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+a{
+  color: #000;
+  font-weight: lighter; 
+}
