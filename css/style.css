@@ -1,8 +1,8 @@
 body {
 	font: 400 16px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;	
-	background-color: #F2F2F2;
+	
 }
-.masthead {
+.masthead{
 	width: 100%;
 	margin: 0 auto;
 	
@@ -10,7 +10,7 @@ body {
 	padding: 0;
 }
 .form{
-	width: 25%;
+	width: 35%;
 	margin: 0 auto;
 }
 .masthead h1 {
@@ -21,4 +21,37 @@ body {
 a{
   color: #000;
   font-weight: lighter; 
+}
+
+ .weather{
+	width: 35%;
+	margin: 0 auto;
+	color: #878787 !important;
+}
+
+.weather .main{
+	font-size: 50px;
+ }
+ .weather-icon{
+ 	color: #6ac6f9!important;
+	font-size: 70px!important;
+ }
+ 
+ #loader {  
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+    opacity: .8;
+ }
+
+.ajax-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -32px; 
+    margin-top: -32px;  
+    display: block;     
 }
